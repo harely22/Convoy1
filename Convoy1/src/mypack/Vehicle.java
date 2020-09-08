@@ -69,8 +69,8 @@ public class Vehicle implements Comparable<Vehicle> {
 			currentConvoy.actual+=1.0;
 
 		}
-		System.out.println("Vehicle "+ getIndex()+" leader=" + isLeader+" is calculating shares for convoy size "+ convoySize+" adding to prop"+ ((double)1.0/convoySize)+" ratio="+((double)accumulatedActualShare/accumulatedProportionalShare));
-
+		if(Test1.debugMode){System.out.println("Vehicle "+ getIndex()+" leader=" + isLeader+" is calculating shares for convoy size "+ convoySize+" adding to prop"+ ((double)1.0/convoySize)+" ratio="+((double)accumulatedActualShare/accumulatedProportionalShare));
+		}
 
 	}
 
